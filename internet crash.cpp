@@ -11,7 +11,7 @@
 #include <algorithm>
 #pragma comment(lib, "ws2_32.lib")
 std::atomic<bool> stop_flag(false);
-const char* TARGET_IP = "127.0.0.1"; 
+const char* TARGET_IP = std::thread::hardware_concurrency(); // for less lags
 const int THREAD_COUNT = 16;
 void flood() {
     SOCKET sock = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
