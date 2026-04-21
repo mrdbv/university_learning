@@ -115,8 +115,6 @@ public:
 
 int main() {
     NetworkMonitor sniffer;
-
-    // “ут вкажи св≥й IP
     std::string my_ip = "192.168.0.12";
 
     if (sniffer.initialize(my_ip)) {
