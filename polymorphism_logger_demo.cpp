@@ -19,7 +19,7 @@ public :
 class EncryptLogger : public Logger {
 public : 
 	void log(string message) override {
-		cout << "Encrypted log :  " << message << " ? ? ? ? ? ? ? ?" << endl;
+		cout << "Encrypted log :  " << message << "? ? ? ? ? ? ? ?" << endl;
 	}
 };
 int main() {
